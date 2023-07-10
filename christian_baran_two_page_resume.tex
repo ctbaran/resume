@@ -1,0 +1,185 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeSubHeading}[4]{
+	\item[]
+      \textbf{#1} \hfill #2 \newline
+      \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\jobAtSamePlace}[2]{
+	\item[]
+      \textit{#1} \hfill \textit{#2}
+}
+
+
+\newcommand{\resumeSubHeadingEducation}[5]{
+	\item[]
+      \textbf{#1} \hfill #2 \newline
+      #3 \newline
+      \textit{#4} \hfill \textit{#5}
+}
+
+\newcommand{\technology}[2]{
+	\item[]
+	  \textbf{#1}: #2
+}
+
+\newcommand{\award}[2]{
+	\item[]
+	  \textbf{#1} \hfill \textit{#2}
+}
+
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeItemListStart}{\begin{tabular*}}
+\newcommand{\resumeItemListEnd}{\end{tabular*}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  {\Large Christian Baran} & Mobile: 306-491-0556 \\
+  Email: \href{mailto:christian.t.baran@gmail.com}{christian.t.baran@gmail.com} & GitHub: \href{https://github.com/ctbaran}{https://github.com/ctbaran}\\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Relevant Experience}
+  \begin{itemize}[leftmargin=*]
+
+    \resumeSubHeading
+      {Wealthsimple}{Toronto, ON}
+      {Senior Software Engineer}{Apr 2021 - Current}\newline
+      Worked in the Client Domain on investment account opening
+      \begin{itemize}[noitemsep,topsep=0pt]
+      	\item Developed a Node.js/TypeScript platform for building new account opening experiences
+        \item Worked on Ruby on Rails microservices
+      	\item Established technical north star for the Client Domain
+      \end{itemize}
+      \jobAtSamePlace
+      {Engineering Manager}{Apr 2019 - Apr 2021}\newline
+      Led teams in the Wealthsimple For Advisors Domain and the Client Domain 
+      \begin{itemize}[noitemsep,topsep=0pt]
+      	\item Simultaneously led a full stack team of 5 engineers and a process automation team of 3 engineers
+      	\item Contributed to launching a new line of business regulated under the Mutual Fund Dealers Association of Canada
+      	\item Led a cross-functional team of 7 engineers working on onboarding and marketing
+      	\item Assisted in hiring for the Wealthsimple For Advisors and Clients Domains
+      \end{itemize}
+      \jobAtSamePlace
+	  {Engineering Team Lead}{Dec 2018 - Apr 2019}\newline
+	  Led a full stack team of 4 engineers in the Wealthsimple For Advisors organization
+      \begin{itemize}[noitemsep,topsep=0pt]
+      	\item Developed new mutual fund process automation in PL/SQL and Java
+      	\item Assisted in hiring for the Wealthsimple For Advisors Domain
+      \end{itemize}
+      \jobAtSamePlace
+      {Software Engineer}{Mar 2017 - Dec 2018}\newline
+      Worked on the brokerage platform with a primary focus on trading processes, new investment products, RESP account support, and mutual funds
+      \begin{itemize}[noitemsep,topsep=0pt]
+      	\item Optimized two mission critical PL/SQL procedures to achieve a 120x speed-up in one procedure and a 7x speed-up in the other
+      	\item Developed a mutual fund order execution system in Java to enable a high interest savings account product
+      	\item Developed a new process for posting trades, saving approximately 4 person-hours per day and eliminating human error
+        \item Worked on Ruby on Rails microservices
+      \end{itemize}
+	    
+	\resumeSubHeading
+      {Index Exchange}{Toronto, ON}
+      {Software Engineer}{Feb 2016 - Mar 2017}\newline
+      Regular tasks included performing maintenance on production servers, planning security updates, investigating production issues, working on continuous delivery/integration initiatives and building automation tools for deployment and integrations.
+      \begin{itemize}[noitemsep,topsep=0pt]
+        \item Developed and deployed browser-based self-testing application for integrating new partners
+        \item Installed, configured, and maintained company's platform on over a thousand production machines, roughly 50\% of the production fleet at the time
+        \item Worked on projects including developing a new monitoring tool and building an integration for a new partner
+        \item Used Ansible and Docker to deploy new internal services
+        \item Used Vagrant for testing internal deployments and server configurations
+      \end{itemize}    
+\end{itemize}
+
+\newpage
+
+%-----------EDUCATION-----------------
+\section{Education}
+	\begin{itemize}[leftmargin=*]
+	    \resumeSubHeadingEducation
+	      {University of Saskatchewan}{Saskatoon, SK}
+	      {Major Average: 91\%}
+	      {Completed 46 major credit units towards B.Sc. Computer Science}{2014 - 2015}
+	    \resumeSubHeadingEducation
+	      {McGill University}{Montreal, QC}
+	      {CGPA: 3.50}
+	      {Completed 45 credits towards M.Sc. Biochemistry}{2010-2013}
+      \resumeSubHeadingEducation
+        {University of Saskatchewan}{Saskatoon, SK}
+        {High Honours, Cumulative Average: 86\%}
+        {B.Sc. Honours - Biochemistry \& Microbiology}{2006-2010}
+     \end{itemize}
+
+\section{Technical Strengths}
+ \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+   \technology{Languages}{Ruby, Java, TypeScript, JavaScript, Node.js, SQL}
+   \technology{Frameworks}{Rails, koa, RESTEasy, React}
+   \technology{Databases}{PostgreSQL, Oracle DB, MySQL}
+   \technology{DevOps Tools}{Amazon Web Services (AWS), Ansible, Docker, Vagrant, CircleCI, Github Actions}
+ \end{itemize}
+
+\section{Awards}
+ \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+	\award{Graduate Excellence Fellowship}{2011}
+	\award{Groupe de Recherche Axé sur la Structure des Protéine Recruitment Award}{2010}
+	\award{Provost’s Graduate Fellowship}{2010}
+	\award{NSERC PGS - Master’s Scholarship}{2010}
+	\award{College of Medicine Undergraduate Summer Research Scholarship}{2009}
+	\award{Good Spirit REDA Centennial University Scholarship}{2007}
+	\award{University of Saskatchewan Guaranteed Entrance Award}{2006}
+  \end{itemize}
+
+%-------------------------------------------
+\end{document}
