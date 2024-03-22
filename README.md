@@ -1,4 +1,4 @@
-A single-page, one-column resume and two-page, one-column resume for software developers.
+A two-page, one-column resume for software developers.
 
 ### Quick start
 
